@@ -1,0 +1,13 @@
+import pandas as pd
+
+trainDataset = pd.read_csv("training.csv")
+testDataset = pd.read_csv("testing.csv")
+
+print("Début dataset training :\n\n{}".format(trainDataset.head()), "\n\nDébut dataset testing :\n\n{}".format(testDataset.head()))
+
+X_train = trainDataset.drop(['prognosis'], axis=1)
+Y_train = trainDataset['prognosis']
+X_test = testDataset.drop(['prognosis'], axis=1)
+Y_test = testDataset['prognosis']
+print(X_train, Y_train)
+
