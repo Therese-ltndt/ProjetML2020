@@ -9,5 +9,6 @@ X_train = trainDataset.drop(['prognosis'], axis=1)
 Y_train = trainDataset['prognosis']
 X_test = testDataset.drop(['prognosis'], axis=1)
 Y_test = testDataset['prognosis']
-print(X_train, Y_train)
+print("X_train :\n\n{}".format(X_train), "Y_train :\n\n{}".format(Y_train), 
+      "X_test :\n\n{}".format(X_test), "Y_test :\n\n{}".format(Y_test))
 
